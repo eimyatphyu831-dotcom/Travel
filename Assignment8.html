@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Assignment8</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="max-w-auto px-8 bg-slate-50 relative overflow-x-hidden">
+<body class="max-w-7xl m-auto px-4 sm:px-6 lg:px-12 bg-slate-50 relative overflow-x-hidden">
     <div class="absolute top-0 right-0 -z-10 pointer-events-none w-auto max-w-[750px] md:max-w-[800px]">
         <img src="Images/Decore (1).png" alt="Decore Splash Background" class="w-full h-auto">
     </div>
@@ -46,12 +46,11 @@
         </select>
     </div>
 
-    <section class="relative z-10 w-full flex flex-col md:flex-row items-center mt-6 md:mt-4 gap-8">
-
+    <section class="relative z-10 w-full flex flex-col-reverse md:flex-row items-center mt-6 md:mt-4 gap-8">
         <div class="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left py-6 md:py-16">
             <p class="text-red-500 font-bold text-xs md:text-lg tracking-wider mb-3">BEST DESTINATIONS AROUND THE WORLD
             </p>
-            <h1 class="text-5xl sm:text-4xl lg:text-8xl font-bold leading-tight">
+            <h1 class="text-3xl sm:text-4xl lg:text-7xl font-bold leading-tight">
                 Travel,
                 <span class="relative inline-block whitespace-nowrap">
                     enjoy
@@ -65,83 +64,80 @@
                 <p>Built wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
                     listening. Park gate sell they west hard for the.</p>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 mt-8">
+            <div class="flex items-center justify-center md:justify-start gap-6 mt-8">
                 <button
-                    class="w-1/2 sm:w-auto rounded-xl bg-yellow-500 text-white font-semibold px-6 py-3 shadow-lg hover:bg-yellow-600 transition">
-                    Find out more
-                </button>
-                <button
-                    class="flex items-center justify-center gap-2 font-medium text-gray-600 hover:text-gray-800 transition">
+                    class="rounded-xl bg-yellow-500 text-white font-semibold px-6 py-3 shadow-lg hover:bg-yellow-600 transition">Find
+                    out more</button>
+                <button class="flex items-center gap-2 font-medium text-gray-600 hover:text-gray-800 transition">
                     <img src="Images/play.jpg" alt="Demo" class="w-10 h-10 shadow-md rounded-full"> Play Demo
                 </button>
             </div>
-
         </div>
 
         <div class="w-full md:w-1/2 flex justify-end">
-            <img src="Images/Image.png" alt="Hero Image" class="w-full max-w-[700px] h-auto object-cover">
+            <img src="Images/Image.png" alt="Hero Image" class="w-full max-w-[650px] h-auto object-cover">
         </div>
     </section>
 
 
     <section class="flex flex-col items-center mt-16 md:mt-24">
-    <div class="relative w-full flex items-center justify-center mb-8">
-        <div class="text-center">
-            <p class="text-xs md:text-sm font-semibold text-gray-400 tracking-widest uppercase">Category</p>
-            <h2 class="text-2xl md:text-4xl font-bold mt-1">We Offer Best Services</h2>
+        <div class="relative w-full flex items-center justify-center mb-8">
+            <div class="text-center">
+                <p class="text-xs md:text-sm font-semibold text-gray-400 tracking-widest uppercase">Category</p>
+                <h2 class="text-2xl md:text-4xl font-bold mt-1">We Offer Best Services</h2>
+            </div>
+            <img src="Images/Group 4.png" alt="Line"
+                class="absolute right-0 w-12 h-12 md:w-20 md:h-20 opacity-50 md:opacity-100">
         </div>
-        <img src="Images/Group 4.png" alt="Line"
-            class="absolute right-0 w-12 h-12 md:w-20 md:h-20 opacity-50 md:opacity-100">
-    </div>
 
-    <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 px-4 mt-12">
-        <div class="service-card relative group/card cursor-pointer">
-            <div class="card-inner flex flex-col items-center rounded-3xl pt-8 pb-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-hover/card:shadow-md">
-                <img src="Images/Group 48.png" alt="Image1" class="w-16 h-16 object-contain border-none">
-                <div class="px-6 flex flex-col items-center gap-3">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-2">
+
+            <div class="service-card relative group cursor-pointer">
+                <div
+                    class="card-inner flex flex-col items-center border border-gray-100 rounded-3xl p-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-[.active-card]:shadow-md">
+                    <img src="Images/Group 48.png" alt="Image1" class="w-16 h-16 object-contain">
                     <p class="font-semibold text-md">Calculated Weather</p>
                     <p class="text-sm text-gray-500">Built wicket longer admire do barton vanity itself do in it.</p>
                 </div>
+                <img src="Images/Rectangle 157.png" alt="Line2"
+                    class="absolute -bottom-1 -left-4 w-10 h-10 z-0 hidden group-[.active-card]:block">
             </div>
-            <img src="Images/Rectangle 157.png" alt="Line2"
-                class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-14 h-14 z-0 hidden group-hover/card:block">
-        </div>
-        <div class="service-card relative group/card cursor-pointer">
-            <div class="card-inner flex flex-col items-center rounded-3xl pt-8 pb-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-hover/card:shadow-md">
-                <img src="Images/Group 51.png" alt="Image2" class="w-16 h-16 object-contain border-none">
-                <div class="px-6 flex flex-col items-center gap-3">
+
+            <div class="service-card active-card relative group cursor-pointer">
+                <div
+                    class="card-inner flex flex-col items-center border border-gray-100 rounded-3xl p-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-[.active-card]:shadow-md">
+                    <img src="Images/Group 51.png" alt="Image2" class="w-16 h-16 object-contain">
                     <p class="font-semibold text-md">Best Flights</p>
                     <p class="text-sm text-gray-500">Engrossed listening. Park gate sell they west hard for the.</p>
                 </div>
+                <img src="Images/Rectangle 157.png" alt="Line2"
+                    class="absolute -bottom-1 -left-4 w-10 h-10 z-0 hidden group-[.active-card]:block">
             </div>
-            <img src="Images/Rectangle 157.png" alt="Line2"
-                class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-14 h-14 z-0 hidden group-hover/card:block">
-        </div>
-        <div class="service-card relative group/card cursor-pointer">
-            <div class="card-inner flex flex-col items-center rounded-3xl pt-8 pb-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-hover/card:shadow-md">
-                <img src="Images/Group 50.png" alt="Image3" class="w-16 h-16 object-contain border-none">
-                <div class="px-6 flex flex-col items-center gap-3">
+
+            <div class="service-card relative group cursor-pointer">
+                <div
+                    class="card-inner flex flex-col items-center border border-gray-100 rounded-3xl p-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-[.active-card]:shadow-md">
+                    <img src="Images/Group 50.png" alt="Image3" class="w-12 h-12 object-contain">
                     <p class="font-bold text-md">Local Events</p>
-                    <p class="text-sm text-gray-500">Barton vanity itself do in it.Preferred to sportsmen it engrossed.</p>
+                    <p class="text-sm text-gray-500">Barton vanity itself do in it.Preferred to sportsmen it engrossed.
+                    </p>
                 </div>
+                <img src="Images/Rectangle 157.png" alt="Line2"
+                    class="absolute -bottom-1 -left-4 w-10 h-10 z-0 hidden group-[.active-card]:block">
             </div>
-            <img src="Images/Rectangle 157.png" alt="Line2"
-                class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-14 h-14 z-0 hidden group-hover/card:block">
-        </div>
-        <div class="service-card relative group/card cursor-pointer">
-            <div class="card-inner flex flex-col items-center rounded-3xl pt-8 pb-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-hover/card:shadow-md">
-                <img src="Images/Group 49.png" alt="Image4" class="w-16 h-16 object-contain border-none">
-                <div class="px-6 flex flex-col items-center gap-3">
+            <div class="service-card relative group cursor-pointer">
+                <div
+                    class="card-inner flex flex-col items-center border border-gray-100 rounded-3xl p-6 text-center gap-3 bg-white relative z-10 transition shadow-sm group-[.active-card]:shadow-md">
+                    <img src="Images/Group 49.png" alt="Image4" class="w-16 h-16 object-contain">
                     <p class="font-bold text-md">Customization</p>
                     <p class="text-sm text-gray-500">We deliver outsourced aviation services for military customers</p>
                 </div>
+                <img src="Images/Rectangle 157.png" alt="Line2"
+                    class="absolute -bottom-1 -left-4 w-10 h-10 z-0 hidden group-[.active-card]:block">
             </div>
-            <img src="Images/Rectangle 157.png" alt="Line2"
-                class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-14 h-14 z-0 hidden group-hover/card:block">
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
 
     <section class="flex flex-col items-center mt-16 md:mt-24">
@@ -230,8 +226,7 @@
         </div>
 
 
-        <div
-            class="relative border border-gray-100 rounded-2xl bg-white shadow-xl p-4 mt-10 w-full max-w-[370px] sm:mr-24">
+        <div class="relative border border-gray-100 rounded-2xl bg-white shadow-xl p-4 mt-10 w-full max-w-[370px]">
             <img src="Images/Rectangle 17.png" alt="Book" class="w-full h-40 rounded-xl object-cover">
             <p class="font-semibold mt-4 text-lg">Trip To Greece</p>
             <p class="text-sm text-gray-400 mt-1">14-29 June | by Robbin josepx</p>
@@ -274,7 +269,7 @@
         <div class="relative min-h-[320px] w-full md:w-1/2 flex items-center justify-center p-4">
 
             <div
-                class="absolute left-12 sm:left-44 bottom-4 z-0 h-[160px] w-[90%] sm:w-[400px] rounded-2xl border border-gray-100 bg-white p-6 shadow-md flex items-end">
+                class="absolute left-4 sm:left-44 bottom-8 z-0 h-[160px] w-[90%] sm:w-[400px] rounded-2xl border border-gray-100 bg-white p-6 shadow-md flex items-end">
                 <div>
                     <h4 class="font-bold text-gray-700">Chris Thomas</h4>
                     <p class="text-xs text-gray-400">CEO of Red Button</p>
@@ -282,7 +277,7 @@
             </div>
 
             <div
-                class="relative z-10 w-full sm:w-[400px] rounded-2xl border border-gray-100 bg-white p-6 shadow-xl mb-16 sm:mr-52">
+                class="relative z-10 w-full sm:w-[400px] rounded-2xl border border-gray-100 bg-white p-6 shadow-xl mb-16 mr-48">
                 <img src="Images/Profile (2).png" alt="Profile"
                     class="absolute -left-4 -top-1 z-20 h-12 w-12 rounded-full border-2 border-white shadow-md object-cover">
                 <p class="text-sm text-gray-600 leading-relaxed">"On the windows talking painted pasture yet its express
@@ -307,13 +302,13 @@
         </div>
     </section>
 
-    <section class="w-full px-4 md:px-2 mt-24">
-        <div
-            class="w-full max-w-8xl mx-auto p-8 md:p-16 bg-violet-50 relative rounded-3xl rounded-tl-[5rem] text-center shadow-sm">
-            <img src="Images/Group 77.png" alt="Telegram" class="absolute -top-12 -right-6 w-14 h-14 z-20">
+    <div class="w-full px-4 md:px-8 mt-24">
+        <section
+            class="w-full max-w-4xl mx-auto p-8 md:p-16 bg-violet-50 relative rounded-3xl rounded-tl-[5rem] text-center shadow-sm">
+            <img src="Images/Group 77.png" alt="Telegram" class="absolute -top-6 -right-6 w-14 h-14 z-20">
 
             <div class="w-full relative z-10">
-                <p class="text-black font-bold text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
+                <p class="text-gray-700 font-bold text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
                     Subscribe to get information, latest news and other interesting offers about Cobham
                 </p>
 
@@ -329,24 +324,23 @@
                     </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
 
 
     <footer class="max-w-7xl mx-auto px-4 py-16 mt-16 border-t border-gray-100">
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-center sm:text-left">
-            
-            <div class="sm:col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start">
-                <h1 class="text-3xl font-extrabold text-gray-700">Jadoo.</h1>
-                <p class="text-gray-400 mt-5 text-md leading-6 max-w-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+            <div class="sm:col-span-2 lg:col-span-1">
+                <h1 class="text-4xl font-extrabold text-gray-700">Jadoo.</h1>
+                <p class="text-gray-400 mt-5 text-sm leading-6 max-w-xs">
                     Book your trip in minute, get full Control for much longer.
                 </p>
             </div>
 
             <div>
                 <h3 class="font-bold text-lg mb-5">Company</h3>
-                <ul class="space-y-3 text-gray-500 text-md font-medium">
+                <ul class="space-y-3 text-gray-500 text-sm font-medium">
                     <li><a href="#" class="hover:text-blue-500 transition">About</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Careers</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Mobile</a></li>
@@ -355,7 +349,7 @@
 
             <div>
                 <h3 class="font-bold text-lg mb-5">Contact</h3>
-                <ul class="space-y-3 text-gray-500 text-md font-medium">
+                <ul class="space-y-3 text-gray-500 text-sm font-medium">
                     <li><a href="#" class="hover:text-blue-500 transition">Help/FAQ</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Press</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Affiliates</a></li>
@@ -364,7 +358,7 @@
 
             <div>
                 <h3 class="font-bold text-lg mb-5">More</h3>
-                <ul class="space-y-3 text-gray-500 text-md font-medium">
+                <ul class="space-y-3 text-gray-500 text-sm font-medium">
                     <li><a href="#" class="hover:text-blue-500 transition">Airlinefees</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Airline</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition">Low fare tips</a></li>
@@ -372,7 +366,7 @@
             </div>
 
             <div class="flex flex-col items-center sm:items-start">
-                <div class="flex gap-4 items-center">
+                <div class="flex gap-4">
                     <div class="w-14 h-14 rounded-full bg-gray-100 flex justify-center items-center"><img
                             src="Images/Social1.png"></div>
                     <div class="w-12 h-12 rounded-full bg-pink-200 flex justify-center items-center"><img
@@ -381,8 +375,9 @@
                             src="Images/Social3.png"></div>
                 </div>
 
+
                 <p class="text-gray-500 font-medium text-sm mt-6">Discover our app</p>
-                <div class="flex gap-3 mt-4 justify-center sm:justify-start">
+                <div class="flex gap-3 mt-4">
                     <button
                         class="bg-black hover:bg-gray-900 text-white py-2 px-4 rounded-full flex items-center gap-2.5 transition shadow-md w-[120px] h-[42px]">
                         <img src="Images/google-play.png" alt="Google Play" class="h-5 w-auto flex-shrink-0">
@@ -405,9 +400,10 @@
                 </div>
             </div>
         </div>
-        <p class="text-center text-gray-400 text-sm mt-12 pt-8 border-t border-gray-50">All rights reserved @jadoo.co
+        <p class="text-center text-gray-400 text-sm mt-16 pt-8 border-t border-gray-50">All rights reserved @jadoo.co
         </p>
     </footer>
+
 
     <script>
         const menuBtn = document.getElementById('menu-btn');
@@ -423,6 +419,13 @@
             }
         });
 
+        const cards = document.querySelectorAll('.service-card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                cards.forEach(c => c.classList.remove('active-card'));
+                card.classList.add('active-card');
+            });
+        });
 
     </script>
 
