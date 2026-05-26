@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiet Mind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full">
+    <div class="flex">
+        <!-- Side bar -->
+        <aside id=""
+            class="bg-slate-100 w-52 shadow-lg p-4 min-h-screen md:flex flex-col justify-between hidden md:fixed">
+            <div>
+                <!-- header logo -->
+                <div class="flex gap-2">
+                    <img src="Images/quiet.png" alt="Quiet" class="w-10 h-10 rounded-md bg-green-200">
+                    <div>
+                        <h1 class="font-bold text-xl text-green-800">QuietMind</h1>
+                        <p class="font-semibold text-sm text-gray-500">Beginner's Hoven</p>
+                    </div>
+                </div>
+
+                <div class="my-8">
+                    <!-- New Note -->
+                    <button type="submit"
+                        class="text-white font-semibold rounded-2xl bg-green-900 text-center px-4 py-2 w-full">&#43; New
+                        Note</button>
+                    <!-- LIBRARY -->
+                    <div class="mt-2 space-y-2">
+                        <p class="font-semibold text-md text-gray-500">LIBRARY</p>
+                        <div class="flex gap-3 border rounded-lg hover:bg-green-600 bg-green-300  px-2 py-2">
+                            <img src="Images/document.png" class="w-5">
+                            <a href="#">Notes</a>
+                        </div>
+                        <div class="flex gap-3  hover:bg-green-600 rounded-lg  px-4 py-2">
+                            <img src="Images/category.png" class="w-5">
+                            <a href="#">Categories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAVOURITES -->
+                <div class="flex-1">
+                    <p class="text-md font-semibold text-gray-500">FAVORITES</p>
+                    <ul class="list-inside list-disc pl-2 space-y-2">
+                        <li class="marker:text-green-800"><a href="#" class="hover:text-blue-500">Personal</a></li>
+                        <li class="marker:text-green-400"><a href="#" class="hover:text-blue-500">Creative Work</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <!-- footer section -->
+                <div class="border-t">
+                    <ul class="space-y-6 mt-2">
+                        <li><a href="#" class="flex gap-3 hover:text-blue-500"><img src="Images/setting.png"
+                                    class="w-6">Setting</a></li>
+                        <li><a href="#" class="flex gap-3 hover:text-blue-500"><img src="Images/archive.png"
+                                    class="w-6">Archieve</a></li>
+                        <li><a href="#" class="flex gap-3 hover:text-blue-500"><img src="Images/help.png"
+                                    class="w-6">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <button
+            class="md:hidden fixed bottom-4 right-2 w-[60px] border-t border-gray-300 bg-green-950 text-white py-4 flex items-center justify-center z-50 shadow-lg rounded-full pl-4">
+            ➕<span class="font-bold pl-3"></span>
+        </button>
+
+        <!-- main section -->
+        <main class="bg-white flex-1 px-4 min-w-0 md:ml-52">
+            <!-- search -->
+            <div class="flex justify-between w-full sticky top-0 bg-white">
+                <input type="search" placeholder="🔍Search your thoughts...."
+                    class="border rounded-3xl bg-slate-100 w-2/3">
+                <div class="flex space-x-2">
+                    <button class="font-bold text-green-800 mt-2 p-2 hidden md:flex flex-col">&#43;&nbsp;&nbsp;New
+                        Note</button>
+                    <img src="Images/profile.png" class="w-10 shrink-0">
+                </div>
+            </div>
+            <!-- Julian -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10">
+                <div class="col-span-2">
+                    <h1 class="font-bold text-3xl">Good morning,Julian.</h1>
+                    <p>Take a breath.What's on your mind today?</p>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex items-center gap-3 justify-end">
+                        <button
+                            class="flex items-center gap-1.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-300 text-gray-600 text-xs font-medium px-4 py-4 transition-colors h-7">
+                            <img src="Images/recent.png" class="w-3.5 h-3.5 object-contain" alt="Recent">Recent</button>
+                        <button
+                            class="flex items-center gap-1.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-300 text-gray-600 text-xs font-medium px-4 py-4 transition-colors h-7">
+                            <img src="Images/layout.png" class="w-3.5 h-3.5 object-contain" alt="Layout">
+                            Layout</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-4">
+                <!-- Philosophy -->
+                <div class="col-span-2 bg-gray-200 border-1 rounded-lg shadow-lg py-6 px-8">
+                    <button class="rounded-xl text-green-900 px-4 py-1 bg-gray-300">Creative Work</button>
+                    <span>.&nbsp;2 hours ago</span>
+                    <h1 class="font-semibold text-xl mt-8 mb-1">The Philosophy of Quiet Productivity</h1>
+                    <p>In a world that never stops shouting, there is a profound power in</p>
+                    <p>finding silence. This morning, I'm reflecting on how we can build tools</p>
+                    <p>that don't demand attention, but rather reward it...</p>
+                    <div class="flex gap-2 mt-8">
+                        <button class="rounded-xl px-4 bg-gray-300">#mindfulness</button>
+                        <button class="rounded-xl px-2 py-1 bg-gray-300">#design-ethics</button>
+                    </div>
+                </div>
+                <!-- Ideas -->
+                <div class="bg-white border-1 rounded-lg shadow-lg px-8 py-6">
+                    <div class="flex justify-between">
+                        <button class="rounded-xl text-green-900 px-8 py-1 bg-gray-300">Ideas</button>
+                        <img src="Images/pin.png" class="w-4 h-4 object-contain">
+                    </div>
+                    <h1 class="text-lg font-semibold mt-5">Morning Ritual Ideas</h1>
+                    <ol class="list-decimal list-inside space-y-1 mt-2">
+                        <li>Cold water therapy</li>
+                        <li>5 minutes of focused breathing</li>
+                        <li>Tea ceremony without screens...</li>
+                    </ol>
+                    <button class="rounded-xl px-4 bg-gray-300 mt-6">#wellness</button>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
+                <!-- Office design -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col justify-between">
+                    <div class="relative w-full">
+                        <img src="Images/light.jpg" alt="office" class="w-full h-32 object-cover">
+                        <span
+                            class="absolute bottom-0 translate-y-1/2 left-6 z-10 bg-blue-100 text-green-900 hover:bg-gray-400 px-3 py-1 rounded-full text-sm font-medium shadow">Work</span>
+                    </div>
+                    <div class="p-6 pt-8">
+                        <h3 class="text-lg font-semibold mb-3">Office Redesign Notes</h3>
+                        <p>Need to prioritize ergonomic comfort and natural light diffusion...</p>
+                    </div>
+                </div>
+                <!-- Personal -->
+                <div class="bg-white border rounded-lg shadow-lg p-6">
+                    <button class="rounded-xl px-8 py-1 bg-gray-300 text-green-900">Personal</button>
+                    <h1 class="text-lg font-semibold mt-4">Weekend Grocery List</h1>
+                    <ul class="list-inside list-disc pl-2 space-y-2">
+                        <li class="marker:text-green-800">Fresh ginger & mint</li>
+                        <li class="marker:text-green-800"> Organic honey</li>
+                    </ul>
+                </div>
+                <!-- Project -->
+                <div class="bg-white border rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between">
+                        <button class="rounded-xl px-4 bg-gray-300 text-green-900">Work</button>
+                        <span>Mar 12</span>
+                    </div>
+                    <h1 class="text-lg font-semibold mt-4">Project Alpha Reviews</h1>
+                    <p>The feedback from the initial user</p>
+                    <p>group was surprisingly positive</p>
+                    <p>regarding the soft-focus UI..</p>
+                </div>
+        </main>
+</body>
+
+</html>

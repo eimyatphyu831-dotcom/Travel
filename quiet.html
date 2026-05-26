@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiet Mind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f4f3ef] font-sans antialiased text-[#2b2a27]">
+    <div class="flex min-h-screen">
+        
+        <aside class="w-64 bg-[#f4f3ef] p-6 flex flex-col justify-between border-r border-[#e8e7e3]/40">
+            <div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#4a5d4e] flex items-center justify-center text-white text-xl">
+                        🌱
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg text-[#2b2a27] tracking-tight">QuietMind</h1>
+                        <p class="text-xs text-[#8a8985]">Beginner's Haven</p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <button class="flex items-center justify-center gap-2 text-white font-medium rounded-xl bg-[#36493c] hover:bg-[#2b3a30] transition-colors py-3 w-full shadow-sm text-sm">
+                        <span>+</span> New Note
+                    </button>
+                    
+                    <div class="mt-8 space-y-1">
+                        <p class="font-bold text-xs tracking-wider text-[#a1a09b] px-3 mb-2">LIBRARY</p>
+                        <a href="#" class="flex items-center gap-3 rounded-xl bg-[#98a99a]/30 text-[#2b3a30] font-medium px-3 py-2.5 text-sm">
+                            <span>📄</span> Notes
+                        </a>
+                        <a href="#" class="flex items-center gap-3 rounded-xl text-[#5a5955] hover:bg-[#98a99a]/10 font-medium px-3 py-2.5 text-sm transition-colors">
+                            <span>📁</span> Categories
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <p class="font-bold text-xs tracking-wider text-[#a1a09b] px-3 mb-2">FAVORITES</p>
+                    <ul class="space-y-1 px-3 text-sm font-medium text-[#5a5955]">
+                        <li class="flex items-center gap-2 py-1.5"><span class="w-2 h-2 rounded-full bg-[#36493c]"></span> Personal</li>
+                        <li class="flex items-center gap-2 py-1.5"><span class="w-2 h-2 rounded-full bg-[#98a99a]"></span> Creative Work</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[#e8e7e3] pt-4">
+                <ul class="space-y-1 text-sm font-medium text-[#5a5955]">
+                    <li><a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-[#98a99a]/10 rounded-xl transition-colors"><span>⚙️</span> Settings</a></li>
+                    <li><a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-[#98a99a]/10 rounded-xl transition-colors"><span>📥</span> Archive</a></li>
+                    <li><a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-[#98a99a]/10 rounded-xl transition-colors"><span>❓</span> Help</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="flex-1 bg-[#faf9f6] p-8 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center w-full gap-8">
+                    <div class="relative w-full max-w-xl">
+                        <span class="absolute inset-y-0 left-4 flex items-center text-[#8a8985] text-sm">🔍</span>
+                        <input type="search" placeholder="Search your thoughts..." class="w-full pl-10 pr-4 py-2.5 rounded-full border border-[#e8e7e3] bg-[#f4f3ef]/50 focus:outline-none focus:border-[#98a99a] text-sm placeholder-[#8a8985]">
+                    </div>
+                    <div class="flex items-center gap-6 shrink-0">
+                        <button class="font-semibold text-sm text-[#36493c] hover:text-[#2b3a30] transition-colors flex items-center gap-1.5">
+                            <span>+</span> New Note
+                        </button>
+                        <div class="w-9 h-9 rounded-full bg-orange-200 overflow-hidden border border-[#e8e7e3]">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Profile" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-end mt-12 mb-8">
+                    <div>
+                        <h1 class="font-bold text-4xl tracking-tight text-[#2b2a27]">Good morning, Julian.</h1>
+                        <p class="text-[#8a8985] mt-1 text-base">Take a breath. What's on your mind today?</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="flex items-center gap-1.5 rounded-lg border border-[#e8e7e3] bg-white hover:bg-[#f4f3ef] text-[#5a5955] text-xs font-semibold px-3 py-1.5 transition-colors shadow-sm">
+                            <span>📂</span> Recent
+                        </button>
+                        <button class="flex items-center gap-1.5 rounded-lg border border-[#e8e7e3] bg-white hover:bg-[#f4f3ef] text-[#5a5955] text-xs font-semibold px-3 py-1.5 transition-colors shadow-sm">
+                            <span>📊</span> Layout
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-5">
+                    
+                    <div class="col-span-2 bg-[#f4f3ef] rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-semibold">
+                                <span class="bg-white/80 text-[#36493c] px-2.5 py-1 rounded-md">Creative Work</span>
+                                <span class="text-[#a1a09b]">• 2 hours ago</span>
+                            </div>
+                            <h2 class="font-bold text-2xl mt-5 text-[#2b2a27] leading-snug">The Philosophy of Quiet Productivity</h2>
+                            <p class="text-[#5a5955] mt-3 leading-relaxed max-w-xl">
+                                In a world that never stops shouting, there is a profound power in finding silence. This morning I'm reflecting on how we can build tools that don't demand attention, but rather reward it...
+                            </p>
+                        </div>
+                        <div class="flex gap-2 mt-8">
+                            <span class="bg-[#e8e7e3] text-[#5a5955] text-xs font-medium px-3 py-1 rounded-md">#mindfulness</span>
+                            <span class="bg-[#e8e7e3] text-[#5a5955] text-xs font-medium px-3 py-1 rounded-md">#design-ethics</span>
+                        </div>
+                        <div class="absolute right-6 top-8 w-16 h-16 rounded-full bg-[#e8e7e3]/40"></div>
+                    </div>
+
+                    <div class="bg-white border border-[#e8e7e3]/60 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <span class="bg-[#f4f3ef] text-[#5a5955] text-xs font-semibold px-2.5 py-1 rounded-md">Ideas</span>
+                                <span class="text-[#a1a09b] text-sm transform rotate-45">📌</span>
+                            </div>
+                            <h2 class="text-lg font-bold mt-5 text-[#2b2a27]">Morning Ritual Ideas</h2>
+                            <ol class="space-y-2 mt-3 text-sm text-[#5a5955] list-decimal list-inside font-medium">
+                                <li><span class="text-[#5a5955]">Cold water therapy</span></li>
+                                <li><span>5 minutes of focused breathing</span></li>
+                                <li><span>Tea ceremony without screens...</span></li>
+                            </ol>
+                        </div>
+                        <div class="mt-6">
+                            <span class="bg-[#f4f3ef] text-[#5a5955] text-xs font-medium px-3 py-1 rounded-md">#wellness</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-[#e8e7e3]/60 rounded-2xl overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="h-32 bg-amber-100/40 relative overflow-hidden">
+                                <div class="absolute -right-4 -top-4 w-28 h-28 rounded-full bg-orange-100 blur-xl"></div>
+                                <div class="absolute left-6 bottom-4 bg-[#36493c] text-white text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded">Work</div>
+                            </div>
+                            <div class="p-5">
+                                <h2 class="font-bold text-base text-[#2b2a27]">Office Redesign Notes</h2>
+                                <p class="text-sm text-[#8a8985] mt-1.5 leading-relaxed">Need to prioritize ergonomic comfort and natural light diffusion...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-[#e8e7e3]/60 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div>
+                                <span class="bg-[#f4f3ef] text-[#5a5955] text-xs font-semibold px-2.5 py-1 rounded-md">Personal</span>
+                            </div>
+                            <h2 class="text-base font-bold mt-4 text-[#2b2a27]">Weekend Grocery List</h2>
+                            <ul class="space-y-2 mt-3 text-sm text-[#5a5955]">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#36493c]"></span> Fresh ginger & mint</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#36493c]"></span> Organic honey</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-[#e8e7e3]/60 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <span class="bg-[#f4f3ef] text-[#5a5955] text-xs font-semibold px-2.5 py-1 rounded-md">Work</span>
+                                <span class="text-xs text-[#a1a09b] font-medium">Mar 12</span>
+                            </div>
+                            <h2 class="text-base font-bold mt-4 text-[#2b2a27]">Project Alpha Review</h2>
+                            <p class="text-sm text-[#8a8985] mt-2 leading-relaxed">The feedback from the initial user group was surprisingly positive regarding the soft-focus UI...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
